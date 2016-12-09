@@ -1,0 +1,114 @@
+{
+	"fourthYear": [{
+		"subject": "Enterprise Application Development 1",
+		"grade": "TBC"
+	}, {
+		"subject": "Enterprise Application Architecture",
+		"grade": "TBC"
+	}, {
+		"subject": "Interactive Media Design 1",
+		"grade": "TBC"
+	}, {
+		"subject": "Social Media Analysis",
+		"grade": "TBC"
+	}, {
+		"subject": "Information Management",
+		"grade": "TBC"
+	}, {
+		"subject": "Project",
+		"grade": "TBC"
+	}],
+	"thirdYear": [{
+		"subject": "Industry Project",
+		"grade": "A"
+	}, {
+		"subject": "Algorithms and Data Structures 1",
+		"grade": "A"
+	}, {
+		"subject": "Operating Systems",
+		"grade": "B+"
+	}, {
+		"subject": "Innovation & Entrepreneurship",
+		"grade": "B"
+	}, {
+		"subject": "Advanced Database",
+		"grade": "B"
+	}, {
+		"subject": "Web Design & Development 2",
+		"grade": "B-"
+	}, {
+		"subject": "Cloud Services & Distributed Computing",
+		"grade": "B-"
+	}, {
+		"subject": "Work Placement Experiental Learning",
+		"grade": "PASS"
+	}],
+	"secondYear": [{
+		"subject": "Management Science",
+		"grade": "A"
+	}, {
+		"subject": "Database Design & Programming",
+		"grade": "A"
+	}, {
+		"subject": "Web Design & Development 1",
+		"grade": "B+"
+	}, {
+		"subject": "Object Oriented Analysis & Design",
+		"grade": "B+"
+	}, {
+		"subject": "Discrete Mathematics 2",
+		"grade": "B+"
+	}, {
+		"subject": "Networking 2",
+		"grade": "B"
+	}, {
+		"subject": "Networking 1",
+		"grade": "B"
+	}, {
+		"subject": "Software Quality Assurance & Testing",
+		"grade": "B-"
+	}, {
+		"subject": "Software Development 4",
+		"grade": "B-"
+	}, {
+		"subject": "Software Development 3",
+		"grade": "B-"
+	}, {
+		"subject": "Project",
+		"grade": "B-"
+	}],
+	"firstYear": [{
+		"subject": "Social Media Communication's",
+		"grade": "A"
+	}, {
+		"subject": "Statistics",
+		"grade": "A"
+	}, {
+		"subject": "Computer Architecture",
+		"grade": "B+"
+	}, {
+		"subject": "Software Development 1",
+		"grade": "B+"
+	}, {
+		"subject": "Object Oriented System Analysis",
+		"grade": "B+"
+	}, {
+		"subject": "Learning to Learn at 3rd Level",
+		"grade": "B-"
+	}, {
+		"subject": "Operating Systems Fundamentals",
+		"grade": "B-"
+	}, {
+		"subject": "Business & Information Systems",
+		"grade": "C"
+	}, {
+		"subject": "Fundamentals of Interface and Web Design",
+		"grade": "C"
+	}, {
+		"subject": "Software Development 2",
+		"grade": "C"
+	}, {
+		"subject": "Discrete Mathematics 1",
+		"grade": "C"
+	}]
+}

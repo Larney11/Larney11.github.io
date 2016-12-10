@@ -1,53 +1,14 @@
+var myapp = angular.module('education',[]);
 
-/*jslint node: true */
-'use strict';
-/*global angular */
-/*
-var education = angular.module("education", []);
-
-educatione.controller('educationController', function ($scope) {
-    $scope.education = {
-        fourthYear: [
-            {
-                id: 1,
-                subject: "BOOM Baby",
-                grade: "A+"
-            },
-            {
-                id: 2,
-				subject: "Fundamentals of Interface and Web Design",
-				grade: "C"
-            }
-        ]
-    };
+myapp.controller('educationCtrl',function($scope,$http){
+    $scope.result = null;
+    
+    $http({method: 'GET', url: './Results.json'})
+    .success(function(data, status, headers, config) {
+        $scope.results=data;
+    })
+    .error(function(data, status, headers, config) {          
+        $scope.results = [{subject:"Error",grade:"Could not load json data"}];
+    });
 });
-*/
-
-/*
-
-var test = angular.module("test", []);
-
-
-test.controller('showhideCtrl', function ($scope) {
-    $scope.items = [
-        {
-            title: 'Header - 1',
-            content: 'Dynamic Group Body - 1'
-        },
-        {
-            title: ' Header - 2',
-            content: 'Dynamic Group Body - 2'
-        },
-        {
-            title: ' Header - 3',
-            content: 'Dynamic Group Body - 3'
-        }
-    ];
-
-    $scope.showdes = function (item) {
-        $scope.itemdesc = item;
-        $scope.hidevar = true;
-    };
-});
-*/
 

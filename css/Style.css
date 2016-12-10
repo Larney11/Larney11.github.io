@@ -1,14 +1,3 @@
-
-.col-xs-1 {
-    border: 2px solid black;
-}
-.col-xs-2 {
-    border: 2px solid black;
-}
-.col-xs-3 {
-    border: 2px solid black;
-}
-
 .row [class*="col-"]{
   margin-bottom: -99999px;
   padding-bottom: 99999px;
@@ -53,24 +42,13 @@ div.inlineRow {
 /*-------------------------------------------------*/
 /* Projects */
 
-
-
-hr.star-primary {
-  padding: 0;
-  border: none;
-  border-top: solid 5px;
-  text-align: center;
-  max-width: 50%;
-  margin: 25px auto 30px;
+.ProjectContainer {
+    margin-bottom: 20px;
 }
-hr.star-primary:after {
-  font-family: FontAwesome;
-  content: "\f005";
-  display: inline-block;
-  position: relative;
-  top: -0.8em;
-  font-size: 2em;
-  padding: 0 0.25em;
+
+.whiteBackground {
+    background-color: white;
+    width: 300px;
 }
 
 
@@ -101,134 +79,13 @@ hr.star-primary:after {
 
 /*-------------------------------------------------*/
 
-
-
-
-
-#portfolio .portfolio-item {
-  margin: 0 0 15px;
-  right: 0;
+/* About text */
+.paraText {
+    width: 80%;
+    text-align: center;
+    margin: 0 auto;
+    padding-bottom: 10px;
 }
-#portfolio .portfolio-item .portfolio-link {
-  display: block;
-  position: relative;
-  max-width: 400px;
-  margin: 0 auto;
-}
-#portfolio .portfolio-item .portfolio-link .caption {
-  background: rgba(24, 188, 156, 0.9);
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  opacity: 0;
-  transition: all ease 0.5s;
-  -webkit-transition: all ease 0.5s;
-  -moz-transition: all ease 0.5s;
-}
-#portfolio .portfolio-item .portfolio-link .caption:hover {
-  opacity: 1;
-}
-#portfolio .portfolio-item .portfolio-link .caption .caption-content {
-  position: absolute;
-  width: 100%;
-  height: 20px;
-  font-size: 20px;
-  text-align: center;
-  top: 50%;
-  margin-top: -12px;
-  color: white;
-}
-#portfolio .portfolio-item .portfolio-link .caption .caption-content i {
-  margin-top: -12px;
-}
-#portfolio .portfolio-item .portfolio-link .caption .caption-content h3,
-#portfolio .portfolio-item .portfolio-link .caption .caption-content h4 {
-  margin: 0;
-}
-#portfolio * {
-  z-index: 2;
-}
-@media (min-width: 767px) {
-  #portfolio .portfolio-item {
-    margin: 0 0 30px;
-  }
-}
-
-
-
-
-
-
-.portfolio-modal .modal-content {
-  border-radius: 0;
-  background-clip: border-box;
-  -webkit-box-shadow: none;
-  box-shadow: none;
-  border: none;
-  min-height: 100%;
-  padding: 100px 0;
-  text-align: center;
-}
-.portfolio-modal .modal-content h2 {
-  margin: 0;
-  font-size: 3em;
-}
-.portfolio-modal .modal-content img {
-  margin-bottom: 30px;
-}
-.portfolio-modal .modal-content .item-details {
-  margin: 30px 0;
-}
-.portfolio-modal .close-modal {
-  position: absolute;
-  width: 75px;
-  height: 75px;
-  background-color: transparent;
-  top: 25px;
-  right: 25px;
-  cursor: pointer;
-}
-.portfolio-modal .close-modal:hover {
-  opacity: 0.3;
-}
-.portfolio-modal .close-modal .lr {
-  height: 75px;
-  width: 1px;
-  margin-left: 35px;
-  background-color: #2C3E50;
-  transform: rotate(45deg);
-  -ms-transform: rotate(45deg);
-  /* IE 9 */
-  -webkit-transform: rotate(45deg);
-  /* Safari and Chrome */
-  z-index: 1051;
-}
-.portfolio-modal .close-modal .lr .rl {
-  height: 75px;
-  width: 1px;
-  background-color: #2C3E50;
-  transform: rotate(90deg);
-  -ms-transform: rotate(90deg);
-  /* IE 9 */
-  -webkit-transform: rotate(90deg);
-  /* Safari and Chrome */
-  z-index: 1052;
-}
-.portfolio-modal .modal-backdrop {
-  opacity: 0;
-  display: none;
-}
-
-
-
-
-
-
-
-
-/*-------------------------------------------------*/
-
-
 
 
 .p {
@@ -260,29 +117,46 @@ hr.star-primary:after {
     padding-top:50px;
     text-align: center;
 }
+
+#About {
+    padding-top:50px;
+    background-color: white;
+    color: black;
+    padding-bottom: 30px;
+}
     
 #WorkExp {
     padding-top:50px;
     color: black; 
-    background-color: white;
+    background-color: #4da6ff;
 }
     
 #Education {
     padding-top:50px;
     color: black; 
-    background-color: #0BC3EC;
+    background-color: white;
 }
     
 #Projects {
     padding-top:50px;
+    padding-bottom:50px;
     color: black; 
-    background-color: yellow;
+    background-color: #4da6ff;
 }
 
-#ContactMe {
+#Languages {
+    margin-top: 100px;
+    color: black; 
+    background-color: white;
+}
+
+#ContactInfo {
     padding-top:50px;
-    color: #fff; 
-    background-color: #00bcd4;
+    padding-bottom:50px;
+    
+    color: black; 
+    background-color: #4da6ff;
+    
 }
       
 #map {
@@ -290,57 +164,74 @@ hr.star-primary:after {
 }
 
 
-/* Buttons 
-
-buttonClick:after {
-    color1a75ff
+/* Home */
+#contactMeBtnHome {
+    margin: 0 auto;
 }
-*/
 
-buttonClick {
-    display: block;
-    font-size: 18px;
-    border: 2px solid gray;
-    border-radius: 100px;
-    width: 100px;
-    height: 100px;
+
+/*----------------------*/
+/* Modals */
+/*----------------------*/
+#contactModal,#fourthYearmodal {
+    margin-top: 20px;
+}
+
+.modal-header {
+    background-color: #4da6ff;
+    color: white;
     text-align: center;
-    line-height: 100px;
-}
-buttonClick:focus {
-    font-size: 18px;
-    border: 2px solid green;
-    border-radius: 100px;
-    width: 100px;
-    height: 100px;
-}
-buttonClick:target {
-    font-size: 18px;
-    border: 2px solid red;
-    border-radius: 100px;
-    width: 100px;
-    height: 100px;
 }
 
-/*-------------------------*/
-/* ContactMe */
+/* carousel */
 
+.carousel{
+    width:640px;
+    height:360px;
+    margin: 0 auto; 
+
+}
+
+
+.carousel-inner > .item > img, .carousel-inner > .item > a > img {
+    width:640px;
+    height:360px;
+    /*
+    width: 70%;
+    margin: auto;
+    */
+}
+
+#myCarousel {
+    height: 350px;
+}
+
+
+#projectModalImage {
+    height: 75%;
+    margin: 0 auto;
+}
+
+
+/* Contact Modal */
 
 #contactForm {
     padding: 10px 20px 10px 20px;
+    margin-bottom: 20px;
 }
 
-/*
 #contactModalButtons {
     float: right;
+    
 }
-*/
 
+/* alert in contact modal */
 .alert {
     display: none;
     padding: 20px;
     background-color: #4CAF50;
     color: white;
+    margin-top: 60px;
 }
 
 .closebtn {
@@ -359,35 +250,11 @@ buttonClick:target {
 }
 
 
+/*-------------------------------------------------*/
+
 .workExpColHeader{
     margin-left: 20px;
 }
-
-#box    {  width:300px;
-           height:200px;
-           box-shadow:inset 1px 1px 40px 0 rgba(0,0,0,.45);
-          border-bottom:2px solid #fff;
-          border-right:2px solid #fff;
-          margin:5% auto 0 auto; 
-          background:url(http://ianfarb.com/wp-content/uploads/2013/10/nicholas-hodag.jpg);
-  background-size:cover;
-border-radius:5px;
-overflow:hidden;}
-
-#overlaya    {  background:rgba(0,0,0,.75);
-               text-align:center;
-               padding:45px 0 66px 0;
-               opacity:0;
-               -webkit-transition: opacity .25s ease;
--moz-transition: opacity .25s ease;}
-
-#box:hover #overlaya {
-               opacity:1;}
-
-
-
-
-/*-------------------------------------------------*/
 
 
 .centerHeader {
@@ -403,8 +270,7 @@ overflow:hidden;}
     background:url(../img/projects/fourthYrProject.png);
     background-size:cover;
     border-radius:5px;
-    overflow:hidden;
-    margin: 0px, 0px, 20px, 0px;
+    margin-bottom: 20px;
 }
 
 #overlay {  
@@ -429,87 +295,82 @@ overflow:hidden;}
 }
 
 
-
-
-
-
-
-
-
-
-
-
-/*-------------------------------------------------*/
-/* Contact Modal */
-
-/* The Modal (background) */
-.modal {
-    display: none; /* Hidden by default */
-    position: fixed; /* Stay in place */
-    z-index: 1; /* Sit on top */
-    padding-top: 100px; /* Location of the box */
-    left: 0;
-    top: 0;
-    width: 100%; /* Full width */
-    height: 100%; /* Full height */
-    overflow: auto; /* Enable scroll if needed */
-    background-color: rgb(0,0,0); /* Fallback color */
-    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+/* Third yr projectimage */
+#projectImageYr3 {  
+    width:300px;
+    height:300px;
+    box-shadow:inset 1px 1px 40px 0 rgba(0,0,0,.45);
+    border: 2px solid black;
+    background:url(../img/projects/thirdYrProject.png) no-repeat;
+    background-size: 100%;
+    border-radius:5px;
+    overflow:hidden;
+    margin: 0px, 0px, 20px, 0px;
 }
 
-/* Modal Content */
-.modal-content {
-    position: relative;
-    background-color: #fefefe;
-    margin: auto;
-    padding: 0;
-    border: 1px solid #888;
-    width: 80%;
-    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
-    -webkit-animation-name: animatetop;
-    -webkit-animation-duration: 0.4s;
-    animation-name: animatetop;
-    animation-duration: 0.4s
+#projectImageYr3:hover #overlay {
+    opacity:1;
 }
 
-/* Add Animation */
-@-webkit-keyframes animatetop {
-    from {top:-300px; opacity:0} 
-    to {top:0; opacity:1}
+#projectImageYr2 {  
+    width:300px;
+    height:300px;
+    box-shadow:inset 1px 1px 40px 0 rgba(0,0,0,.45);
+    border: 2px solid black;
+    background:url(../img/projects/secondYearProject.jpeg) no-repeat;
+    background-size: 100%;
+
+    border-radius:5px;
+    overflow:hidden;
+    margin: 0px, 0px, 20px, 0px;
 }
 
-@keyframes animatetop {
-    from {top:-300px; opacity:0}
-    to {top:0; opacity:1}
+#projectImageYr2:hover #overlay {
+    opacity:1;
 }
 
-/* The Close Button */
-.close {
+
+/*---------------------*/
+#contactInfoPanel {
+    text-align: center;
+}
+
+.socialLink {
+    display: block;
+    font-size: 15px;
+    border: 2px solid #4da6ff;
+    background-color: white;
+    border-radius: 30px;
+    width: 30px;
+    height: 30px;
+    text-align: center;
+    line-height: 30px;
+}
+
+.socialLink:hover {
+    font-size: 15px;
+    background-color: #4da6ff;
+    border: 2px solid black;
+    border-radius: 30px;
+    width: 30px;
+    height: 30px;
+}
+
+/* footer */
+footer {
+    padding: 1em;
     color: white;
-    float: right;
-    font-size: 28px;
-    font-weight: bold;
+    background-color: #454455;
+    clear: left;
+    text-align: center;
+    height: 110px;
 }
 
-.close:hover,
-.close:focus {
-    color: #000;
-    text-decoration: none;
-    cursor: pointer;
-}
 
-.modal-header {
-    padding: 2px 16px;
-    background-color: #5cb85c;
-    color: white;
-}
 
-.modal-body {padding: 2px 16px;}
 
-.modal-footer {
-    padding: 2px 16px;
-    background-color: #5cb85c;
-    color: white;
-}
 
-/*-------------------------------------------------*/
+
+
+
+
